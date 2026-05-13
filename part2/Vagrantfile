@@ -1,0 +1,14 @@
+Vagrant.configure("2") do |config|
+    config.vm.box = "generic/alpine318"
+    config.vm.hostname = "brguichoS"
+    config.vm.network "private_network", ip: "192.168.56.110"
+    config.vm.provision "shell", name: "cgroup setup", path: "scripts/cgroup-setup.sh"
+    config.vm.provision :reload
+    config.vm.provision "shell", name: "K3s server", path: "scripts/k3s-controler.sh"
+    config.vm.provider "virtualbox" do |vb|
+        vb.name = "brguicho"
+        vb.memory = "1024"
+        vb.cpus = 1
+        vb.gui = false
+    end
+end 
