@@ -6,4 +6,4 @@ curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stabl
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 sudo usermod -aG docker $USER
-sg docker -c "k3d cluster create mycluster"
+sg docker -c "k3d cluster create --config ./config/cluster.yaml"

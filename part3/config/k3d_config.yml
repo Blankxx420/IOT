@@ -1,0 +1,8 @@
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: mycluster
+ports:
+  - port: 8888:80
+    nodeFilters:
+      - loadbalancer
