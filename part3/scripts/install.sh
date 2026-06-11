@@ -21,3 +21,5 @@ echo "Installation of Argo CD..."
 kubectl apply -n argocd --server-side --force-conflicts -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 
 echo "Infrastructure is ready !"
+
+kubectl port-forward svc/argocd-server -n argocd 8080:443
