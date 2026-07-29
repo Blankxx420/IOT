@@ -1,0 +1,17 @@
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: iot-bonus-cluster
+ports:
+  - port: 8888:80
+    nodeFilters:
+      - loadbalancer
+  - port: 80:80
+    nodeFilters:
+      - loadbalancer
+  - port: 443:443
+    nodeFilters:
+      - loadbalancer
+  - port: 22:22
+    nodeFilters:
+      - loadbalancer
