@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "brguichoS" do |brguichoS|
         brguichoS.vm.provider "virtualbox" do |vb|
             vb.name = "brguichoS"
-            vb.memory = "1024"
+            vb.memory = "2048"
             vb.cpus = 1
             vb.gui = false
         end
@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     config.vm.define "brguichoSW" do |brguichoSW|
         brguichoSW.vm.provider "virtualbox" do |vb|
             vb.name = "brguichoSW"
-            vb.memory = "1024"
+            vb.memory = "512"
             vb.cpus = 1
             vb.gui = false
         end
