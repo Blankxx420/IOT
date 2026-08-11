@@ -40,4 +40,4 @@ echo ""
 # 5. Déploiement de l'application Argo CD pointant vers GitLab
 kubectl apply -f ./k8s/application.yaml
 
-echo "Bonus prêt ! N'oubliez pas d'ajouter '127.0.0.1 local.gitlab.com' à votre fichier /etc/hosts."
+echo "Bonus prêt !"
