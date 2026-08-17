@@ -3,15 +3,15 @@ kind: Simple
 metadata:
   name: iot-bonus-cluster
 ports:
-  - port: 8888:80
+  - port: 8889:80
     nodeFilters:
       - loadbalancer
-  - port: 80:80
+  - port: 8081:80
     nodeFilters:
       - loadbalancer
-  - port: 443:443
+  - port: 8443:443
     nodeFilters:
       - loadbalancer
-  - port: 22:22
+  - port: 2222:22
     nodeFilters:
       - loadbalancer
