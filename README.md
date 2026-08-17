@@ -64,6 +64,8 @@ Pour travailler sur ce projet, assurez-vous d'avoir installé les outils suivant
 
 VirtualBox & Vagrant
 
+Vagrant plugin : vagrant-reload
+
 Docker
 
 K3d
@@ -71,7 +73,5 @@ K3d
 Kubectl
 
 Helm
-
-Make
 
 *Ce projet fait partie du cursus de l'École 42.*
